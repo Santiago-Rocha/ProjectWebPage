@@ -1,18 +1,51 @@
-.links-side > a{
-	color: rgba(117, 175, 255, 1);
-	font-size: 20px;
-} 
+body{
+	font-family: 'Orbitron', sans-serif;
+}
 
 #side-bar{
 	position: absolute;
 	height: 100%;
-	background: #081121;
-	color: #fff
+	background: #1f2632;
+	color: #fff;
+	padding: 0px;
 
 }
 
 #BigContainer{
-	background: linear-gradient(#8dabe2,#091325);
+	background: linear-gradient(#485670,#091325);
 	position: absolute;
 	height: 100%;
+}
+
+.links-side a{
+	color: #26a1ff;
+	font-size: 20px;
+	display: block;
+	text-decoration: none;
+	padding: 10px;
+} 
+
+.links-side li:hover{
+	background-color: #495974;
+	border-right: 5px solid #8898b4;
+}
+
+.links-side a:hover{
+	color: #001a2e;
+}
+
+.links-side {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#Description{
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 15px;
+}
+
+#logo{
+	width: 220px;
 }
