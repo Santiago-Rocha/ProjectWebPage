@@ -2,3 +2,17 @@
 	color: rgba(117, 175, 255, 1);
 	font-size: 20px;
 } 
+
+#side-bar{
+	position: absolute;
+	height: 100%;
+	background: #081121;
+	color: #fff
+
+}
+
+#BigContainer{
+	background: linear-gradient(#8dabe2,#091325);
+	position: absolute;
+	height: 100%;
+}
