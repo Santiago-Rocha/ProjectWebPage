@@ -2,11 +2,12 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="Css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="Boostrap/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="Css/Styles.css">
+		<link rel="stylesheet" href="Font-Awesome/css/font-awesome.min.css">
 		<link href='https://fonts.googleapis.com/css?family=Orbitron:500,700' rel='stylesheet' type='text/css'>
-		<script src="Js/jquery-1.12.2.min.js"></script>
-		<script src="Js/bootstrap.min.js"></script>
+		<script src="jquery-1.12.2.min.js"></script>
+		<script src="Boostrap/js/bootstrap.min.js"></script>
 		<title>DiscapacitApp</title>
 	</head>
 	<body>
@@ -16,15 +17,15 @@
 				</div>
 				<div class="col-xs-3 col-xs-offset-9 text-center" id="side-bar">	
 					<div>
-						<a href="" id="lin"><img src="Images/Logo.png" id="logo"></a>
+						<a id="link-img"><img src="Images/Logo.png" id="logo"></a>
 						<br><br>
 						<div id="Description">Aplicacion diseñada para uso de personas con cualquier discapciadad para caminar.</div>
 					</div>
 					<br>
 					<ul class="links-side">
-						<li><a href="" id="link1">Estado del Arte</a></li>
-						<li><a href="" id="link2">Objetivos</a></li>
-						<li><a href="" id="link3">Participantes</a></li>
+						<li><a id="link1">Estado del Arte</a></li>
+						<li><a id="link2">Objetivos</a></li>
+						<li><a id="link3">Participantes</a></li>
 					</ul>
 				</div>
 			</div>
@@ -32,27 +33,30 @@
 	</body>
 	<script> 
 
-     	function load_home(x){
-
-	     	switch(x){
-     			case 2:
-     			document.getElementById("BigContainer").innerHTML='<object type="text/html" data="GG3.html" class="object-html"></object>';
-     		break;
-     			case 3:
-     			document.getElementById("BigContainer").innerHTML='<object type="text/html" data="GG4.html" class="object-html"></object>';
-     		break;
-     			case 4:
-     			document.getElementById("BigContainer").innerHTML='<object type="text/html" data="GG4.html" class="object-html"></object>';
-     		break;
-     			default:
-	     		document.getElementById("BigContainer").innerHTML='<object type="text/html" data="GG2.html" class="object-html"></object>';
-     		break;
-
-     		}
+		function loader(){
+			$("#BigContainer").children().hide();
+			$("#BigContainer").html('<div class="col-xs-4 col-xs-offset-5 text-center" id="loader"><p>Cargando...</p><i class="fa fa-spinner fa-pulse"></i></div>')
 		}
 
-		$("#link")
+		$("#link-img").on("click", function(){
+			loader();
+			setTimeout(function(){ document.getElementById("BigContainer").innerHTML='<object type="text/html" data="GG2.html" class="object-html"></object>'; }, 500);
+		})
 
-		load_home(1);
+		$("#link1").on("click", function(){
+			loader();
+			setTimeout(function(){ document.getElementById("BigContainer").innerHTML='<object type="text/html" data="GG3.html" class="object-html"></object>'; }, 500);
+		})
+
+		$("#link2").on("click", function(){
+			loader();
+			setTimeout(function(){ document.getElementById("BigContainer").innerHTML='<object type="text/html" data="GG4.html" class="object-html"></object>'; }, 500);
+		})
+
+		$("#link3").on("click", function(){
+			loader();
+			setTimeout(function(){ document.getElementById("BigContainer").innerHTML='<object type="text/html" data="GG5.html" class="object-html"></object>'; }, 500);
+		})
+
 	</script> 
 </html>
