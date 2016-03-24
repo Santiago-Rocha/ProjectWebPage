@@ -33,10 +33,19 @@
 		</div>
 	</body>
 	<script> 
-     	function load_home(){
-		document.getElementById("BigContainer").innerHTML='<object type="text/html" data="GG2.html" ></object>'; 
+
+     	function load_home(x){
+
+	     	switch(x){
+	     		case 1:
+	     		document.getElementById("BigContainer").innerHTML='<object type="text/html" data="GG2.html" class="object-html"></object>';
+     		break;
+     			case 2:
+     		break;
+
+     		}
 		}
 
-		load_home();
+		load_home(1);
 	</script> 
 </html>
