@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<link rel="icon" href="Images/favicon.png" />
 		<link rel="stylesheet" type="text/css" href="Boostrap/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="Css/Styles.css">
 		<link rel="stylesheet" href="Font-Awesome/css/font-awesome.min.css">
@@ -24,8 +25,8 @@
 					<br>
 					<ul class="links-side">
 						<li><a id="link1">Estado del Arte</a></li>
-						<li><a id="link2">Objetivos</a></li>
-						<li><a id="link3">Participantes</a></li>
+						<li><a id="link2"><i class="fa fa-bullseye"></i>&nbsp;Objetivos</a></li>
+						<li><a id="link3"><i class="fa fa-users"></i>&nbsp;Participantes</a></li>
 					</ul>
 				</div>
 			</div>
@@ -57,6 +58,8 @@
 			loader();
 			setTimeout(function(){ document.getElementById("BigContainer").innerHTML='<object type="text/html" data="GG5.html" class="object-html"></object>'; }, 500);
 		})
+
+		$("#link-img").click();
 
 	</script> 
 </html>
