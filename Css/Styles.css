@@ -26,12 +26,12 @@ body{
 } 
 
 .links-side li{
-	transition: border 0.3s;
+	transition: border 0.5pxs;
 }
 
 .links-side li:hover{
 	background-color: #495974;
-	border-right: 5px solid #8898b4;
+	border-right: 6px solid #8898b4;
 }
 
 .links-side a:hover{
@@ -40,8 +40,8 @@ body{
 
 .links-side {
 	list-style: none;
-	margin: 0px;
-	padding: 0px;
+	margin: 1px;
+	padding: 2px;
 }
 
 #Description{
