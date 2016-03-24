@@ -78,9 +78,9 @@ body{
 }
 
 .box:hover{
-	width: 300px;
-	height: 300px;
-	margin-left: 10px;
+	width: 400px;
+	height: 450px;
+	margin-left: 20px;
 	box-shadow:
                0 6px 1px rgba(0,0,0,.1),
                0 0 5px rgba(0,0,0,.1),
@@ -90,4 +90,10 @@ body{
                0 10px 10px rgba(0,0,0,.2),
                0 20px 20px rgba(0,0,0,.15);
    transition: all 0.5s;
+}
+
+.box-margin{
+	margin-left:30px;
+	
+	
 }
