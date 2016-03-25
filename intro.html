@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="Css/Styles.css">
 	<link rel="stylesheet" type="text/css" href="Css/Intro.css">
 	<link rel="stylesheet" href="Font-Awesome/css/font-awesome.min.css">
+	<script src="jquery-1.12.2.min.js"></script>
 	<title>Document</title>
 </head>
 <body>
@@ -13,16 +14,51 @@
 		<div class="container-fluid">
 			<div class="row">
 				<h1 class="text-center"> DiscapacitApp</h1>
-				<section class="col-xs-10 col-xs-offset-1">
+				<section class="col-xs-10 col-xs-offset-1" id="info-container">
 					<p class="text-center">Es una aplicación que busca brindar a personas con alguna discapacidad motora una oportunidad para moverse independientemente por la ciudad, mostrándole el camino más corto a su destino teniendo en cuenta si discapacidad </p>
 				</div>
 				<div class="BigBox">
-					<div class="box-margin"><div class="box"></div></div>
-					<div class="box-margin"><div class="box"></div></div>
-					<div class="box-margin"><div class="box"></div></div>     
+					<div class="box-margin"><div class="box">
+						<p class="text-center title-box">INNOVACIÓN <img src="Images/tool.png" class="logo-box"></p>
+						
+					</div></div>
+					<div class="box-margin"><div class="box">
+						<p class="text-center title-box">¿PORQUE ESTA IDEA?<img src="Images/avatar.png" class="logo-box"></p>
+					</div></div>
+					<div class="box-margin"><div class="box">
+						<p class="text-center title-box">INVIERTE<img src="Images/computer.png" class="logo-box"></p>
+										
+					</div></div>     
 				</div>                   
 			</div>
 		</div>
 	</div>
 </body>
+<script type="text/javascript">
+	
+	function changeBox(box){
+		$(box).children("p").removeClass("text-center")
+		$(box).children("p").css("margin-left","50px")
+							.css("padding-top","20px");
+		$(box).children().children().css("margin-left","10px")
+	}
+
+	function improveBox(box){
+		$(box).children("p").addClass("text-center")
+		$(box).children("p").css("margin-left","0px")
+							.css("padding-top","60px");
+		$(box).children().children().css("margin-left","6px")
+	}
+
+
+	$($(".box")[0]).hover(function(){
+		changeBox(this)
+	})
+
+	$($(".box")[0]).on( "mouseleave", function(){
+		improveBox(this)
+	})
+
+	
+</script>
 </html> 
