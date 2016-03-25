@@ -5,8 +5,8 @@
 		<link rel="icon" href="Images/favicon.png" />
 		<link rel="stylesheet" type="text/css" href="Boostrap/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="Css/Styles.css">
+		<link rel="stylesheet" type="text/css" href="Css/Index.css">
 		<link rel="stylesheet" href="Font-Awesome/css/font-awesome.min.css">
-		<link href='https://fonts.googleapis.com/css?family=Orbitron:500,700' rel='stylesheet' type='text/css'>
 		<script src="jquery-1.12.2.min.js"></script>
 		<script src="Boostrap/js/bootstrap.min.js"></script>
 		<title>DiscapacitApp</title>
@@ -19,7 +19,7 @@
 				<div class="col-xs-3 col-xs-offset-9 text-center" id="side-bar">	
 					<div>
 						<a id="link-img"><img src="Images/Logo.png" id="logo"></a>
-						<br><br>
+						<br><br><br>
 						<div id="Description">Aplicacion diseñada para uso de personas con cualquier discapciadad para caminar.</div>
 					</div>
 					<br>
@@ -41,7 +41,7 @@
 
 		$("#link-img").on("click", function(){
 			loader();
-			setTimeout(function(){ document.getElementById("BigContainer").innerHTML='<object type="text/html" data="GG2.html" class="object-html"></object>'; }, 500);
+			setTimeout(function(){ document.getElementById("BigContainer").innerHTML='<object type="text/html" data="intro.html" class="object-html"></object>'; }, 500);
 		})
 
 		$("#link1").on("click", function(){
