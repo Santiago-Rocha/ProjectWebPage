@@ -19,15 +19,17 @@
 				</div>
 				<div class="BigBox">
 					<div class="box-margin"><div class="box">
-						<p class="text-center title-box">INNOVACIÓN <img src="Images/tool.png" class="logo-box"></p>
+						<p class="text-center title-box">NUESTRA INNOVACIÓN <br><img src="Images/tool.png" id="box1"></p>
+						<p class="text-justify">Aqui va el texto gays, antes de ponerlo aqui escriban en word para que les corriga la ortografia y las otras mierdas, jejeje , nejhjsgnjks gnssngjskg</p>	
 						
 					</div></div>
 					<div class="box-margin"><div class="box">
-						<p class="text-center title-box">¿PORQUE ESTA IDEA?<img src="Images/avatar.png" class="logo-box"></p>
+						<p class="text-center title-box">¿PORQUE ESTA IDEA?<br><img src="Images/avatar.png" id="box2"></p>
+						<p class="text-justify">Aqui va el texto gays, antes de ponerlo aqui escriban en word para que les corriga la ortografia y las otras mierdas, jejeje , nejhjsgnjks gnssngjskg</p>	
 					</div></div>
 					<div class="box-margin"><div class="box">
-						<p class="text-center title-box">INVIERTE<img src="Images/computer.png" class="logo-box"></p>
-										
+						<p class="text-center title-box">INVIERTE EN NOSOTROS<br><img src="Images/computer.png" id="box3"></p>	
+						<p class="text-justify">Aqui va el texto gays, antes de ponerlo aqui escriban en word para que les corriga la ortografia y las otras mierdas, jejeje , nejhjsgnjks gnssngjskg</p>			
 					</div></div>     
 				</div>                   
 			</div>
@@ -35,29 +37,42 @@
 	</div>
 </body>
 <script type="text/javascript">
-	
-	function changeBox(box){
-		$(box).children("p").removeClass("text-center")
-		$(box).children("p").css("margin-left","50px")
-							.css("padding-top","20px");
-		$(box).children().children().css("margin-left","10px")
+
+	function ShowLogo(box){
+		$(box).children().children("img").show()
+		$($(box).children("p")[1]).hide();
 	}
 
-	function improveBox(box){
-		$(box).children("p").addClass("text-center")
-		$(box).children("p").css("margin-left","0px")
-							.css("padding-top","60px");
-		$(box).children().children().css("margin-left","6px")
-	}
+	 function HideLogo(box){
+	 	$(box).children().children("img").hide()
+	 	$($(box).children("p")[1]).hide();
+	 	$($(box).children("p")[1]).show()
+	 }
 
 
 	$($(".box")[0]).hover(function(){
-		changeBox(this)
-	})
+		HideLogo(this)
+	});
+
+	$($(".box")[1]).hover(function(){
+		HideLogo(this)
+	});
+
+	$($(".box")[2]).hover(function(){
+		HideLogo(this)
+	});
 
 	$($(".box")[0]).on( "mouseleave", function(){
-		improveBox(this)
-	})
+		ShowLogo(this)
+	});
+
+	$($(".box")[1]).on( "mouseleave", function(){
+		ShowLogo(this)
+	});
+
+	$($(".box")[2]).on( "mouseleave", function(){
+		ShowLogo(this)
+	});
 
 	
 </script>
