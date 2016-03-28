@@ -1,10 +1,11 @@
 .panel-heading{
 	background-size: cover;
-	height: 200px;
+	height: 170px;
 }
 
 .panel{
 	background-color: transparent;
+	border: 0px;
 }
 
 .panel:hover{
@@ -19,9 +20,26 @@
    transition: all 0.5s;
 }
 
-.photos{
+.pic{
 	width: 130px;
 	height: 128px;
 	border-radius: 100%;
 	margin-top: -70px;
 }
+
+.panel-body{
+	background: #1f2632;
+}
+
+.photos{
+	width: 130px;
+	height: 128px;
+	margin-top: 50px;
+}
+
+.brand-logo{
+	font-size: 20px !important;
+	margin-top: 15px;
+	text-align: center;
+}
+
