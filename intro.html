@@ -10,27 +10,26 @@
 	<title>Document</title>
 </head>
 <body>
-	<div class="Text-Container">
+	<div class="Text-Container" style="	overflow: hidden !important;">
 		<div class="container-fluid">
 			<div class="row">
 				<h1 class="text-center"> DiscapacitApp</h1>
 				<section class="col-xs-10 col-xs-offset-1" id="info-container">
 					<p class="text-center">Es una aplicación que busca brindar a personas con alguna discapacidad motora una oportunidad para moverse independientemente por la ciudad, mostrándole el camino más corto a su destino teniendo en cuenta si discapacidad </p>
 				</div>
-				<div class="BigBox">
-					<div class="box-margin"><div class="box">
+				<div class="BigBox row">
+					<div class="box col-xs-3">
 						<p class="text-center title-box">NUESTRA INNOVACIÓN <br><img src="Images/tool.png" id="box1"></p>
-						<p class="text-justify">Aqui va el texto gays, antes de ponerlo aqui escriban en word para que les corriga la ortografia y las otras mierdas, jejeje , nejhjsgnjks gnssngjskg</p>	
-						
-					</div></div>
-					<div class="box-margin"><div class="box">
+						<p class="text-center text-box">La principal diferencia de nuestra aplicación respecto a las que ya existen en el mercado, es el hecho de que es más completa y brinda la posibilidad de tener la mayoría de los beneficios en un solo lugar, beneficios que se pueden encontrar de forma separada en distintos aplicativos móviles. Inicialmente será dirigida para la población de la ciudad de Bogotá, y posteriormente se irá ampliando a diferentes ciudades del país y del mundo.</p>	
+					</div>
+					<div class="box col-xs-3">
 						<p class="text-center title-box">¿POR QUE ÉSTA IDEA?<br><img src="Images/avatar.png" id="box2"></p>
-						<p class="text-justify">Aqui va el texto gays, antes de ponerlo aqui escriban en word para que les corriga la ortografia y las otras mierdas, jejeje , nejhjsgnjks gnssngjskg</p>	
-					</div></div>
-					<div class="box-margin"><div class="box">
+						<p class="text-center text-box">Está idea nace del interés en ayudar a aquellas personas con discapacidades motoras,  aquí es donde nos damos cuenta que el problema de movilidad para quienes tienen dificultades para desplazarse como una persona normal, es un problema que día a día empeora en temas como: acceso al transporte público, instalaciones adecuadas, los senderos o andes para el tránsito de éstas personas, entre otros problemas que a diario afronta esta población.</p>	
+					</div>
+					<div class="box col-xs-3">
 						<p class="text-center title-box">INVIERTE EN NOSOTROS<br><img src="Images/computer.png" id="box3"></p>	
-						<p class="text-justify">Aqui va el texto gays, antes de ponerlo aqui escriban en word para que les corriga la ortografia y las otras mierdas, jejeje , nejhjsgnjks gnssngjskg</p>			
-					</div></div>     
+						<p class="text-center text-box">Esta aplicación además de brindar una ayuda y dar solución a una importante necesidad de las personas discapacitadas es una oportunidad de negocio, es la oportunidad de influir de manera positiva en la sociedad. No estamos hablando de invertir para generar una plusvalía, si no la satisfacción de estar contribuyendo a la mejora de la calidad de vida de una persona a través de una contribución.</p>			
+					</div>
 				</div>                   
 			</div>
 		</div>
@@ -38,40 +37,66 @@
 </body>
 <script type="text/javascript">
 
-	function ShowLogo(box){
+	function ShowLogo(box, box1, box2){
 		$(box).children().children("img").show()
 		$($(box).children("p")[1]).hide();
+		$(box).removeClass("col-xs-4")
+	 		  .addClass("col-xs-3");
+	 	$(box1).css("margin-left","5%")
+	 		   .css("margin-right","3%");
+	 	$(box2).css("margin-left","5%")
+	 		   .css("margin-right","3%");
 	}
 
-	 function HideLogo(box){
+	 function HideLogo(box, box1, box2){
 	 	$(box).children().children("img").hide()
-	 	$($(box).children("p")[1]).hide();
+	 	$(box).removeClass("col-xs-3")
+	 		  .addClass("col-xs-4");
+	 	$($(box).children("p")[1]).css("font-size","16px")
+
+	 	$(box1).css("margin-left","2%")
+	 		   .css("margin-right","2%");
+	 	$(box2).css("margin-left","2%")
+	 		   .css("margin-right","2%");
+
 	 	$($(box).children("p")[1]).show()
 	 }
 
 
 	$($(".box")[0]).hover(function(){
-		HideLogo(this)
+		var box1 = $(".box")[1]
+		var box2 = $(".box")[2]
+		HideLogo(this, box1, box2)
 	});
 
 	$($(".box")[1]).hover(function(){
-		HideLogo(this)
+		var box1 = $(".box")[0]
+		var box2 = $(".box")[2]
+		HideLogo(this, box1, box2)
 	});
 
 	$($(".box")[2]).hover(function(){
-		HideLogo(this)
+		var box1 = $(".box")[0]
+		var box2 = $(".box")[1]
+		HideLogo(this, box1, box2)
 	});
 
 	$($(".box")[0]).on( "mouseleave", function(){
-		ShowLogo(this)
+		var box1 = $(".box")[1]
+		var box2 = $(".box")[2]
+		ShowLogo(this, box1, box2)
 	});
 
 	$($(".box")[1]).on( "mouseleave", function(){
-		ShowLogo(this)
+		var box1 = $(".box")[0]
+		var box2 = $(".box")[2]
+		ShowLogo(this, box1, box2)
 	});
 
 	$($(".box")[2]).on( "mouseleave", function(){
-		ShowLogo(this)
+		var box1 = $(".box")[0]
+		var box2 = $(".box")[1]
+		ShowLogo(this, box1, box2)
 	});
 
 	

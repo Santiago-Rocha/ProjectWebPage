@@ -1,8 +1,8 @@
 .box{
 	background: #1f2632;
-	width: 220px;
 	height: 220px;
-	margin-left: 45px;
+	margin-left: 5%;
+	margin-right: 3%;
 	box-shadow:
                0 6px 1px rgba(0,0,0,.1),
                0 0 5px rgba(0,0,0,.1),
@@ -15,9 +15,7 @@
 }
 
 .box:hover{
-	width: 340px;
 	height: 440px;
-	margin-left: -7%;
    transition: all 0.5s;
 }
 
@@ -42,7 +40,7 @@
 	font-size: 18px;
 }
 
-.box:nth-child(1) > p:nth-child(2){
+.text-box{
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-top: 10px;

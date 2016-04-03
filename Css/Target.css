@@ -1,0 +1,37 @@
+.Specific{
+	box-shadow:
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+    background: #1f2632;
+    margin-right: -3%;
+    margin-left: 8%;
+}
+
+.General{
+	box-shadow:
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+    background: #1f2632;
+    margin-bottom: 30px;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+h4{
+	font-size: 23px;
+}
+
+.text-specific{
+	font-size: 16px;
+	margin-bottom: 10%
+}
