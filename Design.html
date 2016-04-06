@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="Boostrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="Css/Styles.css">
+	<link rel="stylesheet" type="text/css" href="Css/Design.css">
+	<script src="jquery-1.12.2.min.js"></script>
+	<title>Document</title>
+</head>
+<body>
+	<div class="Text-Container">
+		<div class="container-fluid">
+			<div class="row"><div class="col-xs-12"><h1 class="text-center">Inicio de Sesión y Registro</h1></div></div>
+			<br>
+			<div class="row">
+			<div class="col-xs-4">
+				<div class="panel panel default text-center">
+				<img src="https://cloud.githubusercontent.com/assets/13685178/14306376/2484045c-fb8c-11e5-8779-d10af0846713.png" class="img-design col-xs-12">
+				</div>
+			</div>
+			<div class="col-xs-4">
+				<div class="panel panel default text-center">
+				<section id="img1" style="width:100%">
+				<img src="https://cloud.githubusercontent.com/assets/13685178/14306901/efb8ace6-fb90-11e5-91a6-322186d3ec11.png" class="img-design col-xs-12" style="display:none">
+				<img src="https://cloud.githubusercontent.com/assets/13685178/14306394/6079fc64-fb8c-11e5-9371-0598f9ab3261.png" class="img-design col-xs-12">
+				</section>
+				</div>
+			</div>
+			<div class="col-xs-4">
+				<div class="panel panel default text-center">
+				<img src="https://cloud.githubusercontent.com/assets/13685178/14306384/3c32e578-fb8c-11e5-967e-56cd199259b5.png" class="img-design col-xs-12">
+				</div>
+			</div>
+			</div>
+			<br>
+			<div class="row"><div class="col-xs-12"><h1 class="text-center">Uso de la aplicación</h1></div></div>
+			<br>
+			<div class="row">
+			<div class="col-xs-4">
+				<div class="panel panel default text-center">
+				<section id="img2" style="width:100%">
+				<img src="https://cloud.githubusercontent.com/assets/13685178/14307400/4eac8aee-fb94-11e5-951a-e68be3529422.png" style="display:none;" class="col-xs-12">
+				<img src="https://cloud.githubusercontent.com/assets/13685178/14306985/738ac590-fb91-11e5-9380-90fbd07b1977.png" class="img-design col-xs-12">
+				</section>
+				</div>
+			</div>
+			<div class="col-xs-4">
+				<div class="panel panel default text-center">
+				<section id="img3" style="width:100%">
+				<img src="https://cloud.githubusercontent.com/assets/13685178/14307379/29ee5f20-fb94-11e5-81b4-ec2085a5c8c2.png" style="display:none;" class="col-xs-12">
+				<img src="https://cloud.githubusercontent.com/assets/13685178/14307019/a557b254-fb91-11e5-9346-135f8c4c9982.png" class="img-design col-xs-12">
+				</section>
+				</div>
+			</div>
+			<div class="col-xs-4">
+				<div class="panel panel default text-center">
+				<section id="img4" style="width:100%">
+				<img src="https://cloud.githubusercontent.com/assets/13685178/14307356/f4c2c5e8-fb93-11e5-840f-796fd545fd27.png" style="display:none" class="col-xs-12">
+				<img src="https://cloud.githubusercontent.com/assets/13685178/14307037/c8bd669e-fb91-11e5-939e-60f787d00c18.png" class="col-xs-12">
+				</section>
+				</div>
+			</div>
+			</div>
+			<div class="row"><div class="col-xs-12"><h1 class="text-center">Calificación</h1></div></div>
+			<br>
+			<div class="row">
+			<div class="col-xs-4 col-xs-offset-4">
+				<div class="panel panel default text-center">
+				<img src="https://cloud.githubusercontent.com/assets/13685178/14307453/bbec5904-fb94-11e5-91d5-4814c810f4a9.png" class="img-design col-xs-12">
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+
+
+	$("#img1").hover(function(){
+		Hiden(this)
+	});
+
+	$("#img1").mouseleave(function(){
+		shown(this)
+	});
+
+	$("#img2").hover(function(){
+		Hiden(this)
+	});
+
+	$("#img2").mouseleave(function(){
+		shown(this)
+	});
+
+	$("#img3").hover(function(){
+		Hiden(this)
+	});
+
+	$("#img3").mouseleave(function(){
+		shown(this)
+	});
+
+	$("#img4").hover(function(){
+		Hiden(this)
+	});
+
+	$("#img4").mouseleave(function(){
+		shown(this)
+	});
+
+
+
+	function Hiden(img1){
+		$($(img1).children("img")[0]).show("slow");
+		$($(img1).children("img")[1]).hide("slow");
+	}
+
+	function shown(img1){
+		$($(img1).children("img")[1]).show("slow");
+		$($(img1).children("img")[0]).hide("slow");
+	}
+
+
+</script>
+</html>
