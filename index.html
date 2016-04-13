@@ -26,6 +26,7 @@
 					<ul class="links-side">
 						<li><a id="link1">Estado del Arte</a></li>
 						<li><a id="link2"><i class="fa fa-bullseye"></i>&nbsp;Objetivos</a></li>
+						<li><a id="link6"><i class="fa fa-cube"></i>&nbsp;Justificación</a></li>
 						<li><a id="link5"><i class="fa fa-pencil-square-o"></i>&nbsp;Diseño</a></li>
 						<li><a id="link3"><i class="fa fa-users"></i>&nbsp;Participantes</a></li>
 					</ul>
@@ -64,6 +65,12 @@
 			loader();
 			setTimeout(function(){ document.getElementById("BigContainer").innerHTML='<object type="text/html" data="Design.html" class="object-html"></object>'; }, 500);
 		})
+
+		$("#link6").on("click", function(){
+			loader();
+			setTimeout(function(){ document.getElementById("BigContainer").innerHTML='<object type="text/html" data="Justify.html" class="object-html"></object>'; }, 500);
+		})
+
 		$("#link-img").click();
 
 	</script> 

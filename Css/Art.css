@@ -32,3 +32,38 @@ box-shadow:
                0 10px 10px rgba(0,0,0,.2),
                0 20px 20px rgba(0,0,0,.15);
 }
+
+.comp-text{
+font-size: 15px;
+text-align: center;
+padding-right: 15px;
+padding-left: 15px;
+margin-top: 15px;
+}
+
+.tables{
+    background: #1f2632;
+    border: 1px #26a1ff solid;
+    margin-bottom: 25px;
+    padding: 0px;
+}
+
+h3{
+  border-bottom: 1px #26a1ff solid;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.green{
+  color: #3bba7d;
+  min-height: 250px;
+}
+
+.red{
+  color: #c15e53;
+  min-height: 150px;
+}
+
+.functions{
+  min-height: 350px;
+}
