@@ -17,53 +17,39 @@ box-shadow:
     margin-top: 3%;
 }
 
-.art-boxing{
-	height: 250px;
-    background: #1f2632;
-    width: 250px;
-    text-align: center;
-    margin-top: 2%;
-    box-shadow:
-               0 6px 1px rgba(0,0,0,.1),
-               0 0 5px rgba(0,0,0,.1),
-               0 1px 3px rgba(0,0,0,.3),
-               0 3px 5px rgba(0,0,0,.2),
-               0 5px 10px rgba(0,0,0,.25),
-               0 10px 10px rgba(0,0,0,.2),
-               0 20px 20px rgba(0,0,0,.15);
-}
-
-.comp-text{
-font-size: 15px;
-text-align: center;
-padding-right: 15px;
-padding-left: 15px;
-margin-top: 15px;
-}
-
-.tables{
-    background: #1f2632;
-    border: 1px #26a1ff solid;
-    margin-bottom: 25px;
-    padding: 0px;
+table{
+  margin-bottom: 25px;
 }
 
 h3{
-  border-bottom: 1px #26a1ff solid;
   text-align: center;
-  padding-bottom: 20px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+thead > tr {
+  border-bottom: solid 2px #26a1ff;
+}
+
+tbody > tr {
+  border-bottom: solid 2px #26a1ff;
+}
+
+.td-border{
+  border-right: solid 2px #26a1ff;
+}
+
+.comp-text{
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 4px;
+  margin-right: 4px;
 }
 
 .green{
   color: #3bba7d;
-  min-height: 250px;
 }
 
 .red{
   color: #c15e53;
-  min-height: 150px;
-}
-
-.functions{
-  min-height: 350px;
 }
